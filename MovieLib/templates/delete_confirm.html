@@ -1,0 +1,12 @@
+{% extends "base_page.html" %}
+
+{% block title %}Update Movie{% endblock %}
+
+{% block content %}
+
+Do you really want to delete the ToDo?
+<form method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger">Yeap, I'm sure.</button>
+</form>
+{% endblock %}
